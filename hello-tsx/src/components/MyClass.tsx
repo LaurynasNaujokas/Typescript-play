@@ -1,8 +1,8 @@
 import * as React from 'react';
+import Image from './cat.png';
 
 export interface MyClassProps {
      name: string; 
-    
     }
 
 export interface MyClassState {
@@ -13,7 +13,6 @@ class MyClass extends React.Component<MyClassProps, MyClassState> {
 
     public static defaultProps: Partial<MyClassProps> = {
         name: 'Unknown'
-
     };
 
     state = {
@@ -23,7 +22,8 @@ class MyClass extends React.Component<MyClassProps, MyClassState> {
   render() {
     return (
       <div>
-          <h1>My name is {this.props.name} and I am {this.state.age}</h1>
+          <h1>She is  {this.props.name} {this.state.age} </h1>
+          <img src={Image} />
       </div>
     );
   }
