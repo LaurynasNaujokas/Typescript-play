@@ -7,7 +7,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <MyClass name={'Laurynas'} age={20} password={'100nu'} isMarried={true} />
+        <MyClass name={'Laurynas'}  />
       </div>
     );
   }
