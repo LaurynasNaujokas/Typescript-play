@@ -2,7 +2,7 @@ import * as React from 'react';
 
 interface IProps {
     text: string;
-    age: number;
+    age?: number;
 }
 
 interface IState {
@@ -11,7 +11,6 @@ interface IState {
 }
 
 export default class Form extends React.Component<IProps, IState> {
-
    state: IState = {
         name: "",
         email: ""
@@ -31,7 +30,7 @@ export default class Form extends React.Component<IProps, IState> {
             <div>
                 <div>{text}</div>
                 <div>{name}</div>
-                <input name="name" value={name} onChange={this.handleChange}/>
+                <input name={name} onChange={this.handleChange}/>
             </div>
         );
     } 
