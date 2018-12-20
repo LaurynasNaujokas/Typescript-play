@@ -19,7 +19,9 @@ export default class Form extends React.Component<IProps, IState> {
 
     handleChange = (e: React.FormEvent<HTMLInputElement>) => {
         const { name, value }: any = e.target;
-  
+        this.setState({
+
+        });
     };
 
     public render(){
