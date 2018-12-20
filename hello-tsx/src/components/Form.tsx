@@ -14,13 +14,13 @@ export default class Form extends React.Component<IProps, IState> {
 
    state: IState = {
         name: "",
-        email: "",
+        email: ""
     };
 
     handleChange = (e: React.FormEvent<HTMLInputElement>) => {
         const { name, value }: any = e.target;
         this.setState({
-
+   
         });
     };
 
