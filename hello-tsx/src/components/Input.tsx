@@ -1,30 +1,29 @@
 import * as React from 'react';
 
 
-export interface MyClassProps {
+export interface InputProps {
      name: string; 
     }
 
-export interface MyClassState {
-    age: number;
+export interface InputState {
+    name: string;
+    firstName: string;
 }
 
-export default class Input extends React.Component<MyClassProps, MyClassState> {
-
-    public static defaultProps: Partial<MyClassProps> = {
-        name: 'Unknown'
-    };
-
+class Input extends React.Component<InputProps, InputState> {
     state = {
-        age: 99
+        name: "",
+        firstName: "Laurynas"
     };
 
   render() {
     return (
       <div>
-          <h1>She is  {this.props.name} {this.state.age} </h1>
- 
+        <input type="text" placeholder={"Hi"} />
+        <text>{this.state.name}</text>
       </div>
     );
   }
 }
+
+export default Input;
